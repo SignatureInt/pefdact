@@ -14,6 +14,6 @@
     ],
     "require": {
         "twilio/sdk": "^5.19",
-        "SignatureInt/pefdact": "^2.0"
+        "SignatureInt/pefdact": "^2.28"
     }
 }
