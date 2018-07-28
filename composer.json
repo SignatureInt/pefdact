@@ -1,0 +1,19 @@
+{
+    "name": "SignatureInt/pefdact",
+    "description": "Blank",
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name": "Obediah",
+            "homepage": "https://www.imdb.com/title/tt0119237/"
+        }
+    ],
+    "repositories": [
+        {"type": "composer", "url": "https://repo.packagist.com/org/"},
+        {"packagist.org": false}
+    ],
+    "require": {
+        "twilio/sdk": "^5.19",
+        "SignatureInt/pefdact": "^2.0"
+    }
+}
