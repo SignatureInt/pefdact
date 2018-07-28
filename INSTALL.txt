@@ -1,0 +1,54 @@
+SetaPDF Installation
+++++++++++++++++++++++++++++
+The main files of all SetaPDF components are located in the folder "library/SetaPDF/".
+
+The SetaPDF components come with an own autoload function which will register itself in the spl provided __autoload
+stack by simply requiring the Autoload.php file:
+
+    require_once('path/to/library/SetaPDF/Autoload.php');
+
+After that you can use all classes without requiring any file manually.
+
+The documentation and demos folders are not needed for productive usage.
+
+
+FOR EVALUATION VERSIONS ONLY
+++++++++++++++++++++++++++++
+An evaluation package is encoded with Zend Guard or Ioncube.
+Both versions require a kind of loader to be installed on your server.
+
+An evaluation version is seperated into two parts: The PHP files and a license file.
+
+License files are named .htSetaPDF-<COMPONENT-NAME>.icl (for Ioncube) or .htSetaPDF-<COMPONENT-NAME>.zl (for Zend Guard)
+
+    NOTICE THE DOT AT THE BEGINNING OF THE FILENAME!
+    SOME SYSTEMS (e.g. MAC) AUTOMATICALLY HIDE SUCH FILES!
+
+Depending on the version you'd choosen read the following installation instructions:
+
+    Ioncube
+    ++++++++++++++++++++++++++++
+    The needed loaders and install instruction for the Ioncube Loader are available at:
+    http://www.ioncube.com/loaders.php
+
+    Place the license file into the root folder "library/SetaPDF/"
+
+
+    Zend Guard
+    ++++++++++++++++++++++++++++
+    To run Zend Guard encoded files you'll need the Zend Optimizer (PHP 5.2) or the Zend Guard Loader (PHP 5.3) to be
+    installed on your server. It is available for download at: http://www.zend.com/products/guard/downloads
+
+    Following PHP code shall be used to load the license file at runtime:
+
+        zend_loader_install_license([absolute_path_to_the_licensefile], true);
+
+    The download package of an evaluation license includes a PHP file (loadLicense.php) that includes the above line,
+    so that you just have to require the file and the license will be loaded automatically.
+
+    It is also possible to load a license file via an entry in the php.ini:
+
+        zend_optimizer.licence_path = [path_to_the_licensefile(s)]
+        or
+        zend_loader.license_path = [path_to_the_licensefile(s)]
+        (make sure you restart your webserver)
