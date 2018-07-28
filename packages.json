@@ -1,0 +1,30 @@
+{
+    "packages": {
+        "vendor/package-name": {
+            "dev-master": {
+                "name": "SignatureInt/pefdact",
+                "version": "1.18.0",
+                "dist": {
+                    "url": "https://www.timesharesale.net/SetaPDF-Extractor_1.18.0.1223_Ioncubed-PHP7.1.zip",
+                    "type": "zip"
+                }   
+            },
+            "1.58.0": {
+                "name": "SignatureInt/pefdact",
+                "version": "1.58.0",
+                "dist": {
+                    "url": "https://www.timesharesale.net/SetaPDF-Extractor_1.58.0.1223_Ioncubed-PHP7.1.zip",
+                    "type": "zip"
+                }   
+            },
+            "2.28.0": {
+                "name": "SignatureInt/pefdact",
+                "version": "2.28.0",
+                "dist": {
+                    "url": "https://www.timesharesale.net/SetaPDF-Extractor_2.28.0.1223_Ioncubed-PHP7.1.zip",
+                    "type": "zip"
+                }   
+            }
+        }
+    }
+}
