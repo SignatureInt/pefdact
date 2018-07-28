@@ -13,7 +13,6 @@
         {"packagist.org": false}
     ],
     "require": {
-        "twilio/sdk": "^5.19",
         "SignatureInt/pefdact": "^2.28"
     }
 }
